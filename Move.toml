@@ -1,0 +1,10 @@
+[package]
+name = "atmos_cc"
+version = "1.0.0"
+edition = "2024.beta"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet-v1.40.1" }
+
+[addresses]
+atmos_cc = "0x0"

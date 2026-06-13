@@ -1,0 +1,29 @@
+## Node
+node_modules/
+dist/
+.env
+*.log
+
+## Sui build artifacts
+build/
+.sui/
+
+## Keys — NEVER commit
+*.pem
+*.key
+keys/
+*.zkey
+
+## Expo / React Native
+atmos_mobile/.expo/
+atmos_mobile/.expo-shared/
+atmos_mobile/node_modules/
+
+## IDE
+.vscode/settings.json
+.idea/
+*.DS_Store
+
+## Test outputs
+coverage/
+.nyc_output/

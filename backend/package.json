@@ -1,0 +1,50 @@
+{
+  "name": "atmos-cc-backend",
+  "version": "1.0.0",
+  "description": "ATMOS Protocol — Sui Carbon MRV Infrastructure",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "sui:publish": "sui client publish --gas-budget 100000000",
+    "sui:test": "sui move test",
+    "sui:build": "sui move build",
+    "deploy": "vercel deploy",
+    "deploy:prod": "vercel deploy --prod",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "@fastify/compress": "^8.3.1",
+    "@fastify/cors": "^11.2.0",
+    "@fastify/helmet": "^13.0.2",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/multipart": "^10.0.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@mysten/sui": "^1.21.0",
+    "@sentry/node": "^10.53.1",
+    "@supabase/supabase-js": "^2.105.3",
+    "axios": "^1.7.9",
+    "bull": "^4.16.5",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.3.2",
+    "fastify-plugin": "^5.0.1",
+    "pg": "^8.13.1",
+    "redis": "^4.7.0",
+    "tweetnacl": "^1.0.3",
+    "uuid": "^11.0.5",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.4",
+    "@types/pg": "^8.11.10",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
