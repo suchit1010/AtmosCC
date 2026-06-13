@@ -352,7 +352,7 @@ export async function getCarbonCreditsForOwner(
   objectId: string;
   projectId: string;
   tonnesKg: number;
-  grade: u8;
+  grade: number;
   retired: boolean;
 }>> {
   if (PACKAGE_ID === '0x0') return []; // Dev mode
